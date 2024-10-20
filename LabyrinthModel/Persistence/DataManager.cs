@@ -33,9 +33,9 @@ namespace Labyrinth.Persistence
 
                 return new LabyrinthData(values);
             }
-            catch (Exception ex)
+            catch
             {
-                throw new Exception(ex.Message);
+                throw new LabyrinthDataException();
             }
         }
     }
